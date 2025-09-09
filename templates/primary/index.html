@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title></title>
+    <script defer src="/js/config.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/global.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/index.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  
+</head>
+
+<body class="loading">
+    <div id="loader">
+        <div class="loader-bars">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h3 class="logo">
+                
+                    </h3>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/marketplace" class="nav-link">Products</a></li>
+
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <button class="icon-btn search-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.3-4.3" />
+                            </svg>
+                        </button>
+                        <form class="search-form">
+                            <input type="text" placeholder="Search products..." class="search-input">
+                            <button type="submit" class="search-submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.3-4.3" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <button class="icon-btn cart-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8" cy="21" r="1" />
+                            <circle cx="19" cy="21" r="1" />
+                            <path
+                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="mobile-menu-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Sidebar Navigation -->
+        <div class="sidebar-overlay"></div>
+        <div class="mobile-sidebar">
+            <div class="sidebar-header">
+                <h3 class="logo">
+                
+                    </h3>
+                <button class="sidebar-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/marketplace">Products</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal">
+            <div class="cart-modal-header">
+                <h3>Your Cart</h3>
+                <button class="cart-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="cart-modal-items">
+                <div class="cart-empty">
+                    <p>Your cart is empty</p>
+                    <a href="/marketplace" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+           
+
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <span class="total-label">Total: </span>
+                    <span class="total-amount">₦0.00</span>
+                </div>
+                <button class="btn btn-primary btn-block checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </div>      
+        
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1></h1>
+                        <p class="description">
+
+                        </p>
+                        <div class="hero-actions">
+                            <a href="/marketplace" class="btn btn-primary"></a>
+                            <a href="/" class="btn btn-outline"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be dynamically loaded here by index.js -->
+                </div>
+                <div class="view-all-container">
+                    <a href="/marketplace" class="btn btn-outline view-all-btn">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title"></h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/marketplace">Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-title">Customer Service</h3>
+                    <ul class="footer-links">
+                      
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Us</h3>
+                    <p>Email: </p>
+                    <p>Phone: </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Store. All rights reserved.</p>
+                <div class="powered-by">
+                    <span>Powered by</span>
+                    <img src="https://api.pluggn.com.ng/image/pluggn_logo.png" crossorigin="anonymous" alt="Pluggn" class="brand-logo">
+                </div>      </div>
+        </div>
+    </footer>
+
+    <!-- Scripts - Load in correct order -->
+    <script src="/js/product.js" crossorigin="anonymous"></script>
+    <script src="/js/cart.js" crossorigin="anonymous"></script>
+    <script src="/js/common.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

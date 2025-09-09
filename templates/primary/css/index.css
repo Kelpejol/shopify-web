@@ -1,0 +1,217 @@
+/* Hero Section */
+.hero {
+  padding: 20px;
+  background: var(--color-background);
+  position: relative;
+  /* overflow: hidden; */
+  max-height: 60vh;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  gap: var(--spacing-8);
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 600px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.hero h1 {
+  font-size: var(--font-size-2xl);
+  padding-top: 40px;
+  margin-bottom: var(--spacing-4);
+  background: var(--color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+.hero .description {
+  font-size: var(--font-size-base);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-6);
+  padding-top: 20px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+  flex-direction: column;
+  font-size: var(--font-size-sm);
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Featured Categories */
+.featured-categories {
+  padding: var(--spacing-16) 0;
+}
+
+/* Featured Products */
+.featured-products {
+  padding: var(--spacing-16) 0;
+  background-color: var(--color-background);
+}
+
+/* About Us */
+.about-us {
+  padding: var(--spacing-16) 0;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.about-text {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  word-break: break-all;
+  overflow-wrap: break-word;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+  }
+  .hero h1 {
+    font-size: var(--font-size-4xl);
+  }
+
+  .hero .description {
+    font-size: var(--font-size-lg);
+    word-break: break-all;
+  overflow-wrap: break-word;
+  }
+
+  .hero {
+    padding: 80px;
+    height: 60vh;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--spacing-4);
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .hero-text {
+    text-align: left;
+    font-size: var(--font-size-base);
+    word-break: break-all;
+    overflow-wrap: break-word;
+  }
+  
+
+  .hero-actions {
+    justify-content: flex-start;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+}
+
+.loading-state,
+.error-state,
+.no-products-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--color-surface, #f8f9fa);
+  border-radius: var(--radius-lg, 12px);
+  border: 1px solid var(--color-border, #e9ecef);
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-border, #e9ecef);
+  border-top: 3px solid var(--color-primary, #007bff);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-state .error-icon,
+.no-products-state .no-products-icon {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  display: block;
+  justify-self: center;
+  text-align: center;
+}
+
+.error-state h3,
+.no-products-state h3 {
+  color: var(--color-text-primary, #333);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.error-state p,
+.no-products-state p {
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-stock {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure product grid maintains responsive layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
