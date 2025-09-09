@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/brand.global.css" crossorigin="anonymous">
    
 </head>
 
@@ -31,7 +31,7 @@
     <div class="container">
         <div class="header-content">
             <h3 class="logo">
-                
+                <a href="/" aria-label="Go to homepage"></a>
             </h3>
             <nav class="main-nav">
                 <ul>
@@ -42,6 +42,7 @@
             <div class="header-actions">
                 <div class="search-container">
                     <button class="icon-btn search-toggle">
+                        <span class="sr-only">Toggle search</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8" />
@@ -51,6 +52,7 @@
                     <form class="search-form">
                         <input type="text" placeholder="Search products..." class="search-input">
                         <button type="submit" class="search-submit">
+                            <span class="sr-only">Search</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -61,6 +63,7 @@
                     </form>
                 </div>
                 <button class="icon-btn cart-btn">
+                    <span class="sr-only">Open cart</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="8" cy="21" r="1" />
@@ -70,6 +73,7 @@
                     <span class="cart-count">0</span>
                 </button>
                 <button class="mobile-menu-btn">
+                    <span class="sr-only">Open menu</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="4" x2="20" y1="12" y2="12" />
@@ -86,9 +90,10 @@
     <div class="mobile-sidebar">
         <div class="sidebar-header">
             <h3 class="logo">
-            
+                <a href="/" aria-label="Go to homepage"></a>
             </h3>
             <button class="sidebar-close">
+                <span class="sr-only">Close menu</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 6 6 18" />
@@ -109,6 +114,7 @@
         <div class="cart-modal-header">
             <h3>Your Cart</h3>
             <button class="cart-close">
+                <span class="sr-only">Close cart</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M18 6 6 18" />
@@ -197,12 +203,13 @@
                         </div>
                     </div>
 
-                    <div class="product-grid">
+                    <div class="product-grid marketplace-product-grid">
                         <!-- Products will be dynamically loaded here -->
                     </div>
 
                     <div class="pagination">
                         <button class="pagination-btn prev-page" disabled>
+                            <span class="sr-only">Previous page</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -215,6 +222,7 @@
                         </div>
                         <button class="pagination-btn next-page">
                             Next
+                            <span class="sr-only">Next page</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -233,7 +241,7 @@
     <div class="container">
         <div class="footer-content">
             <div class="footer-column">
-                <h3 class="footer-title"></h3>
+                <h3 class="footer-title">Store</h3>
                 <ul class="footer-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/marketplace">Products</a></li>
@@ -250,23 +258,23 @@
             </div>
             <div class="footer-column">
                 <h3 class="footer-title">Contact Us</h3>
-                <p>Email: </p>
-                <p>Phone: </p>
+                <p>Email: support@store.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
                 <div class="social-links">
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" aria-label="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                         </svg>
                     </a>
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" aria-label="Twitter">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
                                 d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                         </svg>
                     </a>
-                    <a href="#" class="social-link">
+                    <a href="#" class="social-link" aria-label="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
@@ -279,7 +287,7 @@
         </div>
     <!-- Updated Footer Bottom Section - Replace your existing footer-bottom div with this -->
     <div class="footer-bottom">
-        <p>&copy; 2023 Store. All rights reserved.</p>
+        <p>&copy; 2024 Store. All rights reserved.</p>
         <div class="powered-by">
             <span>Powered by</span>
             <img src="https://api.pluggn.com.ng/image/pluggn_logo.png" alt="Pluggn" class="brand-logo" crossorigin="anonymous">
